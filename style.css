@@ -1,9 +1,11 @@
 body {
   background: #73777B;
   color: #C5A880;
+  font-family: "Monaco", monospace;
 }
 h1{
   color: #C1121F;
+  font-family: "Times New Roman", serif;
 }
 a:link {
   color: #1F4E5F;
