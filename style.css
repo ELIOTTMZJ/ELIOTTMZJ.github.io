@@ -5,6 +5,20 @@ body {
 h1{
   color: #C1121F;
 }
-href{
-  color: #C5A880;
+a:link {
+  color: #1F4E5F;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #F5F0E1;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #C0C0C0;
+  background-color: transparent;
+  text-decoration: underline;
 }
