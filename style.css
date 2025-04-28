@@ -9,18 +9,15 @@ h1{
 }
 a:link {
   color: #1F4E5F;
-  background-color: transparent;
   text-decoration: underline;
 }
 
 a:visited {
   color: #F5F0E1;
-  background-color: transparent;
   text-decoration: underline;
 }
 
 a:hover {
   color: #C0C0C0;
-  background-color: transparent;
   text-decoration: underline;
 }
