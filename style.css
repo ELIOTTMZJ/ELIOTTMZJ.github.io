@@ -3,11 +3,11 @@ body {
   background: #73777B;
   color: #C5A880;
   font-family: "Monaco", monospace;
+  text-align: center;
 }
 h1{
   color: #C1121F;
   font-family: 'Parisienne', cursive;
-  text-align: center
 }
 a:link {
   color: #1F4E5F;
