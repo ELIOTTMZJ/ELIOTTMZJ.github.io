@@ -8,9 +8,12 @@ body {
   margin-right: 10%;
   text-justify: auto;
 }
-h1{
+h1 {
   color: #C1121F;
   font-family: 'Parisienne', cursive;
+}
+footer {
+  background : #5a5f63;
 }
 a:link {
   color: #1F4E5F;
