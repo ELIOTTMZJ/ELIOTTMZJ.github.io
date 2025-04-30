@@ -4,6 +4,7 @@ body {
   color : #C5A880;
   font-family : "Monaco", monospace;
   text-align : justify;
+  text-align : center;
   margin-left : 10%;
   margin-right : 10%;
 }
