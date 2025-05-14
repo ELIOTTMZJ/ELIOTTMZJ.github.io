@@ -46,18 +46,17 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  height: auto;
-  transition: border 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  height: 50%; /* Maintien la forme carrée */
+  transition: border 0.3s ease, transform 0.3s ease;
 }
 
 img:hover {
   border: 2px solid #C1121F;
   border-radius: 10%;
   transform: scale(110%);
-  box-shadow: 0 0 20px 5% rgba(193, 18, 31, 0.6);
+  /* Retirer le glow */
 }
 
-/* Sidebar CSS */
 .sidebar {
   width: 4%;
   transition: width 0.4s ease;
