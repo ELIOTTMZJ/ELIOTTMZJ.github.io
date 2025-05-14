@@ -19,21 +19,21 @@ h1 {
   font-size: 200%;
 }
 
-a {
+.content  a {
   transition: color 0.3s ease;
 }
 
-a:link {
+.content a:link {
   color: #1F4E5F;
   text-decoration: underline;
 }
 
-a:visited {
+.content a:visited {
   color: #F5F0E1;
   text-decoration: underline;
 }
 
-a:hover {
+.content a:hover {
   color: #C0C0C0;
   text-decoration: underline;
 }
@@ -81,12 +81,19 @@ img:hover {
   overflow: hidden;
   transition: background-color 0.3s, color 0.3s;
   border-left: 0.5% solid transparent;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: opacity 0.3s ease, padding 0.3s ease;
 }
 
 .sidebar a:hover {
   background-color: #2D6A75;
   color: #C5A880;
   border-left: 0.5% solid #C1121F;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 main.content {
