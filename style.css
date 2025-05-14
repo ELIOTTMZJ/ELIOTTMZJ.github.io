@@ -6,6 +6,7 @@ body {
   font-family: "Monaco", monospace;
   text-align: center;
   width: 100%;
+  margin: 0;
 }
 
 h1 {
@@ -38,7 +39,43 @@ img {
   height: auto;
   transition: border 0.3s ease;
 }
+
 img:hover {
-  border: 3px solid #C1121F; 
+  border: 0.3% solid #C1121F; 
   border-radius: 10%;
+}
+
+/* ===== SIDEBAR STYLES ===== */
+
+.sidebar {
+  height: 100%;
+  width: 15%; /* largeur en pourcentage */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #1F4E5F;
+  padding-top: 5%;
+  text-align: left;
+  box-shadow: 0 0 1% rgba(0, 0, 0, 0.2);
+}
+
+.sidebar a {
+  display: block;
+  padding: 3% 8%;
+  color: #F5F0E1;
+  font-size: 110%;
+  text-decoration: none;
+  transition: 0.3s;
+  border-left: 0.5% solid transparent;
+}
+
+.sidebar a:hover {
+  background-color: #2D6A75;
+  color: #C5A880;
+  border-left: 0.5% solid #C1121F;
+}
+
+.content {
+  margin-left: 17%; /* espace pour la sidebar */
+  padding: 3%;
 }
