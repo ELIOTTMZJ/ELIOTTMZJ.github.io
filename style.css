@@ -53,23 +53,13 @@ img {
 img:hover {
   border: 0.3% solid #C1121F;
   border-radius: 10%;
-  transform: scale(110%); /* Agrandissement de l'image avec un pourcentage */
-  box-shadow: 0 0 20% 5% rgba(193, 18, 31, 0.6); /* Effet glow (halo lumineux) en pourcentage */
+  transform: scale(110%);
+  box-shadow: 0 0 20% 5% rgba(193, 18, 31, 0.6);
 }
 
 .sidebar {
-  height: 100%;
   width: 4%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #1F4E5F;
-  overflow-x: hidden;
   transition: width 0.4s ease;
-  padding-top: 5%;
-  text-align: left;
-  box-shadow: 0 0 1% rgba(0, 0, 0, 0.2);
-  z-index: 1;
 }
 
 .sidebar:hover {
@@ -78,18 +68,16 @@ img:hover {
 
 .sidebar a {
   opacity: 0;
-  pointer-events: none; /* Désactive l'interaction avec les liens quand ils sont invisibles */
+  pointer-events: none;
   white-space: nowrap;
-  overflow: hidden; /* Cache le texte excédant */
-  transition: opacity 0.3s ease, padding 0.3s ease; /* Animation douce pour l'apparition */
-  padding: 3% 0; /* Réduit le padding pour cacher plus efficacement */
+  overflow: hidden;
+  transition: opacity 0.3s ease, padding 0.3s ease;
+  padding: 3% 0;
 }
 
 
-.sidebar:hover a {
-  opacity: 1;
-  pointer-events: auto; /* Réactive les liens */
-  padding: 3% 10%; /* Restaure le padding pour afficher le texte correctement */
+.sidebar:hover {
+  width: 15%;
 }
 
 main.content {
