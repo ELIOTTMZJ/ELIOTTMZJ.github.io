@@ -77,16 +77,14 @@ img:hover {
 }
 
 .sidebar a {
-  display: block;
-  padding: 3% 10%;
-  color: #F5F0E1;
-  font-size: 110%;
-  text-decoration: none;
-  transition: background-color 0.3s, color 0.3s, opacity 0.3s ease, padding 0.3s ease;
-  border-left: 0.5% solid transparent;
   opacity: 0;
-  pointer-events: none;
+  pointer-events: none; /* Désactive l'interaction avec les liens quand ils sont invisibles */
+  white-space: nowrap;
+  overflow: hidden; /* Cache le texte excédant */
+  transition: opacity 0.3s ease, padding 0.3s ease; /* Animation douce pour l'apparition */
+  padding: 3% 0; /* Réduit le padding pour cacher plus efficacement */
 }
+
 
 .sidebar a:hover {
   background-color: #2D6A75;
