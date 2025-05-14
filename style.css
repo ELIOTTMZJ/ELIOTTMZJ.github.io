@@ -20,24 +20,24 @@ h1 {
   text-align: center;
 }
 
-.content a {
+a {
   transition: color 0.3s ease;
 }
 
-.content a:link,
-.content a:visited {
+a:link,
+a:visited {
   text-decoration: underline;
 }
 
-.content a:link {
+a:link {
   color: #1F4E5F;
 }
 
-.content a:visited {
+a:visited {
   color: #F5F0E1;
 }
 
-.content a:hover {
+a:hover {
   color: #C0C0C0;
 }
 
@@ -90,12 +90,12 @@ img:hover {
   width: 15%;
 }
 
-main.content {
+main {
   margin-left: 5%;
   padding: 3%;
   transition: margin-left 0.4s ease, padding 0.4s ease;
 }
 
-.sidebar:hover ~ main.content {
+.sidebar:hover ~ main {
   margin-left: 17%; /* Décale le contenu lorsque la sidebar est survolée */
 }
