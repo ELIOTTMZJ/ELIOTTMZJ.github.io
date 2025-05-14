@@ -22,10 +22,9 @@ h1 {
 footer {
   background: #44494d;
   color: #ffffff; /* texte blanc pour lisibilité */
-  padding: 20px 0;
+  padding: 10px 0; /* Réduire la hauteur de la bannière */
   margin-top: 40px;
-  width: 100vw;
-  position: relative;
+  width: 100%; /* Étendre la largeur à 100% de l'écran */
   text-align: center;
 }
 
