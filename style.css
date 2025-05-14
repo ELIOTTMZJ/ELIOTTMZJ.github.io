@@ -39,6 +39,6 @@ img {
   transition: border 0.3s ease;
 }
 img:hover {
-  border: 3px solid #C1121F; /* couleur et épaisseur de la bordure */
-  border-radius: 10%;         /* optionnel : bord arrondi */
+  border: 3px solid #C1121F; 
+  border-radius: 10%;
 }
