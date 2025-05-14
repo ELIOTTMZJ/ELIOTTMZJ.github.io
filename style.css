@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+* {
+  box-sizing: border-box;
+}
 
 body {
   background: #73777B;
@@ -14,6 +17,10 @@ h1 {
   font-family: 'Parisienne', cursive;
   text-align: center;
   font-size: 200%;
+}
+
+a {
+  transition: color 0.3s ease;
 }
 
 a:link {
