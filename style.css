@@ -51,19 +51,15 @@ img {
 }
 
 img:hover {
-  border: 0.3% solid #C1121F;
+  border: 2px solid #C1121F;
   border-radius: 10%;
   transform: scale(110%);
-  box-shadow: 0 0 20% 5% rgba(193, 18, 31, 0.6);
+  box-shadow: 0 0 20px 5% rgba(193, 18, 31, 0.6);
 }
 
 .sidebar {
   width: 4%;
   transition: width 0.4s ease;
-}
-
-.sidebar:hover {
-  width: 15%;
 }
 
 .sidebar a {
@@ -75,6 +71,11 @@ img:hover {
   padding: 3% 0;
 }
 
+.sidebar:hover a {
+  opacity: 1;
+  pointer-events: auto;
+  padding: 3% 10%;
+}
 
 .sidebar:hover {
   width: 15%;
@@ -86,6 +87,6 @@ main.content {
   transition: margin-left 0.4s ease;
 }
 
-.sidebar:hover ~ .content {
+.sidebar:hover ~ main.content {
   margin-left: 17%;
 }
