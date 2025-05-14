@@ -86,12 +86,10 @@ img:hover {
 }
 
 
-.sidebar a:hover {
-  background-color: #2D6A75;
-  color: #C5A880;
-  border-left: 0.5% solid #C1121F;
+.sidebar:hover a {
   opacity: 1;
-  pointer-events: auto;
+  pointer-events: auto; /* Réactive les liens */
+  padding: 3% 10%; /* Restaure le padding pour afficher le texte correctement */
 }
 
 main.content {
