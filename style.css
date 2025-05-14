@@ -57,24 +57,33 @@ img:hover {
   box-shadow: 0 0 20px 5% rgba(193, 18, 31, 0.6);
 }
 
+/* Sidebar CSS */
 .sidebar {
   width: 4%;
   transition: width 0.4s ease;
+  position: fixed; /* Fixe la sidebar sur la gauche */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #1F4E5F;
+  color: #F5F0E1;
+  overflow: hidden;
+  padding-top: 5%;
+  text-align: left;
+  z-index: 1;
 }
 
 .sidebar a {
   opacity: 0;
-  pointer-events: none;
-  white-space: nowrap;
-  overflow: hidden;
+  pointer-events: none; /* Désactive les liens quand la sidebar est fermée */
   transition: opacity 0.3s ease, padding 0.3s ease;
-  padding: 3% 0;
+  padding: 10px;
 }
 
 .sidebar:hover a {
   opacity: 1;
   pointer-events: auto;
-  padding: 3% 10%;
+  padding: 10px 20px;
 }
 
 .sidebar:hover {
@@ -85,7 +94,8 @@ main.content {
   margin-left: 5%;
   padding: 3%;
   transition: margin-left 0.4s ease, padding 0.4s ease;
+}
 
 .sidebar:hover ~ main.content {
-  margin-left: 17%;
+  margin-left: 17%; /* Décale le contenu lorsque la sidebar est survolée */
 }
