@@ -47,25 +47,32 @@ img:hover {
 
 .sidebar {
   height: 100%;
-  width: 0%;
+  width: 4%;
   position: fixed;
   top: 0;
   left: 0;
   background-color: #1F4E5F;
   overflow-x: hidden;
-  transition: width 0.4s;
+  transition: width 0.4s ease;
   padding-top: 5%;
   text-align: left;
   box-shadow: 0 0 1% rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.sidebar:hover {
+  width: 15%;
 }
 
 .sidebar a {
   display: block;
-  padding: 3% 8%;
+  padding: 3% 10%;
   color: #F5F0E1;
   font-size: 110%;
   text-decoration: none;
-  transition: 0.3s;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: background-color 0.3s, color 0.3s;
   border-left: 0.5% solid transparent;
 }
 
@@ -75,35 +82,12 @@ img:hover {
   border-left: 0.5% solid #C1121F;
 }
 
-#openBtn {
-  position: fixed;
-  top: 2%;
-  left: 2%;
-  font-size: 120%;
-  background-color: #C1121F;
-  color: white;
-  border: none;
-  padding: 1% 2%;
-  cursor: pointer;
-  border-radius: 5%;
-  z-index: 1;
-  transition: background-color 0.3s;
-}
-
-#openBtn:hover {
-  background-color: #A0101B;
-}
-
 .content {
-  margin-left: 0%;
+  margin-left: 5%;
   padding: 3%;
-  transition: margin-left 0.4s;
+  transition: margin-left 0.4s ease;
 }
 
-.sidebar.open {
-  width: 15%;
-}
-
-.content.shift {
+.sidebar:hover ~ .content {
   margin-left: 17%;
 }
