@@ -52,8 +52,9 @@ img {
 }
 
 img:hover {
-  border-radius: 10%;
+  border: 10%;
   transform: scale(110%);
+  margin-bottom: 15%
 }
 
 .sidebar {
