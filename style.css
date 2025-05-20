@@ -54,7 +54,7 @@ img {
 img:hover {
   border: 10%;
   transform: scale(110%);
-  margin-bottom: 5%
+  margin-bottom: 1%
 }
 
 .sidebar {
