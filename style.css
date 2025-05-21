@@ -48,7 +48,6 @@ img {
   width: 50%;
   height: auto;
   transition: border 0.3s ease, transform 0.3s ease;
-  margin: auto;
 }
 
 img:hover {
@@ -72,20 +71,35 @@ img:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-left: 10px;
+  padding-left: 5%;
 }
 
 .sidebar a {
   opacity: 1;
   pointer-events: auto;
-  padding: 10px 20px;
+  padding: 10px 5%;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 5%;
   transition: color 0.3s ease;
+  font-size: 90%;
 }
 
 main {
   margin-left: 17%;
   padding: 3%;
   transition: margin-left 0.4s ease, padding 0.4s ease;
+}
+
+.logo {
+  position: fixed;
+  top: 2%;
+  right: 2%;
+  width: 8%;       
+  height: auto;
+  z-index: 10;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }
