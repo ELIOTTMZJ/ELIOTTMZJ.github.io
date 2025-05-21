@@ -77,6 +77,8 @@ img:hover {
   pointer-events: none; /* Désactive les liens quand la sidebar est fermée */
   transition: opacity 0.3s ease, padding 0.3s ease;
   padding: 10px;
+  display: block;
+  margin-bottom: 10%;
 }
 
 .sidebar:hover a {
