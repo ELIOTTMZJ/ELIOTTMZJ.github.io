@@ -54,13 +54,12 @@ img {
 img:hover {
   border: 10%;
   transform: scale(110%);
-  margin-bottom: 2%
+  margin-bottom: 2%;
 }
 
 .sidebar {
-  width: 4%;
-  transition: width 0.4s ease;
-  position: fixed; /* Fixe la sidebar sur la gauche */
+  width: 15%;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
@@ -70,33 +69,23 @@ img:hover {
   padding-top: 5%;
   text-align: left;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 10px;
 }
 
 .sidebar a {
-  opacity: 0;
-  pointer-events: none; /* Désactive les liens quand la sidebar est fermée */
-  transition: opacity 0.3s ease, padding 0.3s ease;
-  padding: 10px;
-  display: block;
-  margin-bottom: 10%;
-}
-
-.sidebar:hover a {
   opacity: 1;
   pointer-events: auto;
   padding: 10px 20px;
-}
-
-.sidebar:hover {
-  width: 15%;
+  display: block;
+  margin-bottom: 30px;
+  transition: color 0.3s ease;
 }
 
 main {
-  margin-left: 10%;
+  margin-left: 17%;
   padding: 3%;
   transition: margin-left 0.4s ease, padding 0.4s ease;
-}
-
-.sidebar:hover ~ main {
-  margin-left: 17%; /* Décale le contenu lorsque la sidebar est survolée */
 }
