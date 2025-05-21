@@ -94,7 +94,7 @@ main {
   position: fixed;
   top: 2%;
   right: 2%;
-  width: 8%;       
+  width: 1%;       
   height: auto;
   z-index: 10;
   transition: transform 0.3s ease;
